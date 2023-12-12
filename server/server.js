@@ -4,7 +4,6 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 import passport from 'passport';
 import session from 'express-session';
-import csrf from 'csurf';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 import config from './config.cjs';
 import { getDataFromGoogleSheets, getDataFromGoogleSheetsTurma, getEmailsFromSheet, inserirEscolhasNaPlanilha } from './googlesheets.cjs';
@@ -14,7 +13,6 @@ console.log('Início do arquivo server.js');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const csrfProtection = csrf({ cookie: true });
 
 const app = express();
 
@@ -165,7 +163,7 @@ app.get('/auth/google',
   });
 
 
-  app.post('/finalizarEscolhas', csrfProtection, async (req, res) => {
+  app.post('/finalizarEscolhas', async (req, res) => {
     try {
       const raDoAluno = req.body.raDoAluno;
       const dadosDosAlunos = req.body.dadosDosAlunos;
