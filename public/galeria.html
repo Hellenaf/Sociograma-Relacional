@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociograma</title>
+  <link rel="stylesheet" type="text/css" href="./style/galeria.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Sociograma</h1>
+    </div>
+
+    <div id="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="carrinhoLista"></ul>
+      <button id="visualizarCarrinhoBtn">Visualizar Carrinho</button>
+      <button id="finalizarEscolhas">Finalizar Escolhas</button>
+      <button id="gerarSociograma">Gerar Sociograma</button>
+      <p id="conclusaoEscolhas" class="conclusao-escolhas"></p>
+    </div>
+
+    <div class="select-container">
+      <label for="turmaSelect">Selecione a turma:</label>
+      <select id="turmaSelect"></select>
+    </div>
+
+    <div class="students-area" id="studentsArea"></div>
+  </div>
+
+  <script src="./script/galeria.js"></script>
+  <script type="module" src="/server/googlesheets.cjs"></script>
+</body>
+</html>
