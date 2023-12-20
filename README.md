@@ -6,7 +6,7 @@ O Sociograma Relacional é uma ferramenta que cria grafos de relações com base
 
 1. **Clone o Repositório:**
     ```bash
-    git clone https://github.com/Hellenaf/sociograma-relacional.git
+    git clone https://github.com/seu-usuario/sociograma-relacional.git
     ```
 
 2. **Crie suas Credenciais (Serviço de E-mail) através do Google API.**
@@ -25,6 +25,16 @@ O Sociograma Relacional é uma ferramenta que cria grafos de relações com base
 
 6. **Configuração no Servidor:**
     - Mude o nome das planilhas no arquivo `server/googlesheets.cjs` de acordo com a sua planilha.
+
+## Executando o teste
+
+Para verificar o andamento das solicitações, dados, erros e registros utilize o terminal node.
+
+## Ambiente de Desenvolvimento
+
+1. Instale as dependências: `npm install`.
+2. Execute o servidor local: `npm start`.
+3. Acesse o aplicativo no navegador: `http://localhost:5500`.
 
 ## Licença
 
