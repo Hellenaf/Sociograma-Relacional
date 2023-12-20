@@ -1,20 +1,33 @@
-Sociograma relacional
+# Sociograma Relacional
 
-O socciograma tem a função de criar relações em grafos a partir das escolhas de cada membro presente na lista. 
-Com as relações criadas com os nós, é possível annalisar amizades, grupos, conflitos e isolamentos entre a comunidade analisada.
+O Sociograma Relacional é uma ferramenta que cria grafos de relações com base nas escolhas de cada membro presente na lista. Esses grafos possibilitam a análise de amizades, grupos, conflitos e isolamentos dentro da comunidade analisada.
 
-Instalação
+## Instalação
 
-Clone o repositório;
-Crie sua credentials (serviço de e-mail) a partir do Google API;
-Com a API do Google insira sua planilha com os dados dos membros, como: e-mail, nome completo, setor ou turma que pertence e a foto;
-É necessário criar uma planilha geral com as seguinnnntes abas dentro dela: a primeira para o nome do membro e suas escolhas; a segunda
-para o e-mail geral de todos os membros e as seguintes, cada uma, para inserir os membros por setor ou turma;
-Crie uma autenticação para o login, somente os e-mails dentro da aba dos e-mails podem acessar o sociograma;
-Mude o nome das planilhas no server/googlesheets.cjs conforme a sua panilha.
+1. **Clone o Repositório:**
+    ```bash
+    git clone https://github.com/seu-usuario/sociograma-relacional.git
+    ```
 
-License
+2. **Crie suas Credenciais (Serviço de E-mail) através do Google API.**
 
-For more details, see the full text of the MIT License in the provided
-LICENSE file, or visit https://www.mit.edu/~amini/LICENSE.md.
+3. **Integre a API do Google:**
+    - Insira sua planilha com os dados dos membros, incluindo e-mail, nome completo, setor ou turma, e a foto.
 
+4. **Organize a Planilha:**
+    - Crie uma planilha geral com as seguintes abas:
+      - A primeira para o nome do membro e suas escolhas.
+      - A segunda para o e-mail geral de todos os membros.
+      - Abas adicionais para inserir os membros por setor ou turma.
+
+5. **Autenticação de Login:**
+    - Crie uma autenticação para o login, permitindo o acesso apenas aos e-mails listados na aba correspondente.
+
+6. **Configuração no Servidor:**
+    - Mude o nome das planilhas no arquivo `server/googlesheets.cjs` de acordo com a sua planilha.
+
+## Licença
+
+Este projeto é disponibilizado sob a [Licença MIT](LICENSE). Consulte o arquivo [LICENSE](LICENSE) para obter detalhes sobre os termos e condições.
+
+Para mais detalhes, consulte o texto completo da Licença MIT no arquivo LICENSE fornecido ou visite [https://www.mit.edu/~amini/LICENSE.md](https://www.mit.edu/~amini/LICENSE.md).
