@@ -6,7 +6,7 @@ O Sociograma Relacional é uma ferramenta que cria grafos de relações com base
 
 1. **Clone o Repositório:**
     ```bash
-    git clone https://github.com/seu-usuario/sociograma-relacional.git
+    git clone https://github.com/Hellenaf/sociograma-relacional.git
     ```
 
 2. **Crie suas Credenciais (Serviço de E-mail) através do Google API.**
